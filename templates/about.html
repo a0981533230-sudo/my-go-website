@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>關於我 - 柯博翔</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header class="top-navbar">
+        <div class="nav-container">
+            <div class="menu-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="nav-logo">國立聯合大學 柯博翔</div>
+
+            <div class="nav-links-desktop">
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+                <a href="/projects">Projects</a>
+                <a href="/awards">Awards</a>
+            </div>
+        </div>
+    </header>
+
+    <nav id="navMenu">
+        <div class="close-btn" onclick="toggleMenu()">×</div>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/projects">Projects</a>
+        <a href="/awards">Awards</a>
+    </nav>
+
+    <div class="content" style="margin-top: 80px;"> <h1>關於我</h1>
+        <p>你好！我是柯博翔。目前就讀於國立聯合大學資工系大二。</p>
+        <p>我對後端開發很有興趣，正在努力學習 Go 語言。</p>
+        <br>
+        <a href="/">回首頁</a>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("navMenu");
+            menu.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>

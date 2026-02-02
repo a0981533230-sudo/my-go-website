@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>我的個人網頁</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body class="home-page">
+    <header class="top-navbar">
+        <div class="nav-container">
+            <div class="menu-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav-logo">國立聯合大學 柯博翔</div>
+            <div class="nav-links-desktop">
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+                <a href="/projects">Projects</a>
+                <a href="/awards">Awards</a>
+            </div>
+        </div>
+    </header>
+
+    <nav id="navMenu">
+        <div class="close-btn" onclick="toggleMenu()">×</div>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/projects">Projects</a>
+        <a href="/awards">Awards</a>
+    </nav>
+
+    <div class="hero-banner"></div>
+
+    <div class="main-container">
+        <aside class="profile-card">
+            <div class="profile-img">
+                <img src="/static/photos/me.jpg" alt="柯博翔">
+            </div>
+            <h3 class="name-title">柯博翔</h3>
+            <ul class="info-list">
+                <li><strong>性別：</strong> 男</li>
+                <li><strong>校系：</strong> 國立聯合大學 資工系</li>
+                <li><strong>學號：</strong> U1324006</li>
+                <li><strong>專長：</strong> 程式設計 / 數學</li>
+                <li><strong>電子信箱：</strong> a0981533230@gmail.com / U1324006@o365.nuu.edu.tw</li>
+            </ul>
+        </aside>
+
+        <article class="detail-content">
+            <section class="intro-section">
+                <h2>個人簡介 <span>About</span></h2>
+                <p>你好！我是柯博翔。目前就讀於國立聯合大學資工系大二。正滿懷熱情地投身於後端技術的學習與實踐之中。</p>
+                <p>我正在努力學習 Go 語言，並將其應用於開發實際的專案。對我而言，前端是美感與實用的結合，而後端則是邏輯與效率的靈魂。</p>
+            </section>
+
+            <section class="life-section">
+                <h2>生活隨拍 <span>Life</span></h2>
+                <div class="photo-grid">
+                    <div class="photo-item"><img src="/static/photos/life1.jpg" alt="生活照1"></div>
+                    <div class="photo-item"><img src="/static/photos/life2.jpg" alt="生活照2"></div>
+                    <div class="photo-item"><img src="/static/photos/life3.jpg" alt="生活照3"></div>
+                </div>
+            </section>
+        </article>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("navMenu");
+            menu.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>

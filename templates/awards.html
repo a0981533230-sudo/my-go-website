@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>獲獎紀錄 - 柯博翔</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header class="top-navbar">
+        <div class="nav-container">
+            <div class="menu-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="nav-logo">國立聯合大學 柯博翔</div>
+
+            <div class="nav-links-desktop">
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+                <a href="/projects">Projects</a>
+                <a href="/awards" >Awards</a> </div>
+        </div>
+    </header>
+
+    <nav id="navMenu">
+        <div class="close-btn" onclick="toggleMenu()">×</div>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/projects">Projects</a>
+        <a href="/awards">Awards</a>
+    </nav>
+
+    <div class="content" style="margin-top: 100px; text-align: center;">
+        <h1>獲獎紀錄</h1>
+        <p>目前還在累積實力中，敬請期待未來的獎盃！</p>
+        <br>
+        <a href="/" class="back-link">回首頁</a>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("navMenu");
+            menu.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
